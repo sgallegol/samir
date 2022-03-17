@@ -1,6 +1,6 @@
 package ar.com.educacionit.dominio;
 
-public class Socios {
+public class Socios implements Entity{
     private Long id;
 	private String nombre;
 	private String apellido;
@@ -9,7 +9,9 @@ public class Socios {
 	private  Long pais_id;
 	
 	
-	
+	public Socios() {
+		
+	}
 	
 	
 	

@@ -1,18 +1,27 @@
 package ar.com.educacionit.dominio;
 
-public class Categoria {
+public class Categoria implements  Entity{
 	
 	
 	//caracteristicas
-	private Long identifcacion;
+	private Long identificacion;
 	private String descripcion;
 	private String codigo;
+	
+public Categoria() {
+		
+	}
+	
+	
+	
 	public Categoria(Long identifcacion, String descripcion, String codigo) {
 		
-		this.identifcacion = identifcacion;
+		this.identificacion = identifcacion;
 		this.descripcion = descripcion;
 		this.codigo = codigo;
 	}
+	
+
 	
 	
 	public Categoria(String descripcion, String codigo) {
@@ -22,14 +31,7 @@ public class Categoria {
 	}
 
 
-	public Long getIdentifcacion() {
-		return identifcacion;
-	}
-
-
-	public void setIdentifcacion(Long identifcacion) {
-		this.identifcacion = identifcacion;
-	}
+	
 
 
 	public String getDescripcion() {
@@ -54,8 +56,21 @@ public class Categoria {
 
 	@Override
 	public String toString() {
-		return "Categoria [identifcacion=" + identifcacion + ", descripcion=" + descripcion + ", codigo=" + codigo
+		return "Categoria [identifcacion=" + identificacion + ", descripcion=" + descripcion + ", codigo=" + codigo
 				+ "]";
+	}
+
+
+
+	public Long getId() {
+		// TODO Auto-generated method stub
+		return identificacion;
+	}
+
+
+
+	public void setId(Long id) {
+this.identificacion=id;	
 	}
 	
 	

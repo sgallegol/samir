@@ -11,7 +11,7 @@ public class Alumno {
 		
 		this.nombre = nombre;
 		this.apellido = apellido;
-		this.matricula = matricula;
+		this.matricula = matricul;
 	}
 
 	public String getNombre() {

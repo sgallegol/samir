@@ -3,18 +3,34 @@ package ar.com.educacionit.dao.impl;
 import a.com.educacion.dao.CategoriaDao;
 import ar.com.educacionit.dominio.Categoria;
 
-public class CategoriaDaoImpl implements CategoriaDao {
+public class CategoriaDaoImpl extends JdbcDaoBase<Categoria> implements CategoriaDao {
+	
+	public CategoriaDaoImpl() {
+		super("CATEGORIAS");
+		
+	}	
 	
 	
+}
+
+		
 	
-	
+
+
+
+
+
 
 	
 	
 
-		public Categoria getOne(Long id) {
-			// TODO Auto-generated method stub
-			return null;
+	
+	
+
+	/*	public Categoria getOne(Long id) {
+			String sql  = "SELECT * FROM CATEGORIA WHERE ID = " + id;
+			System.out.println("ejecutando sql"+sql);
+			return new Categoria("categoria","abc0000");
 		}
 
 		public void delete(Long id) {
@@ -39,9 +55,9 @@ public class CategoriaDaoImpl implements CategoriaDao {
 		public Categoria[] findAll() {
 			// TODO Auto-generated method stub
 			return null;
-		}
+		}*/
 
-	}
+	
 	
 
 	

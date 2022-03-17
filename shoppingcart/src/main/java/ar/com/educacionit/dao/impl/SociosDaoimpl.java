@@ -3,12 +3,18 @@ package ar.com.educacionit.dao.impl;
 import a.com.educacion.dao.SociosDao;
 import ar.com.educacionit.dominio.Socios;
 
-public class SociosDaoimpl  implements SociosDao {
+public class SociosDaoimpl  extends JdbcDaoBase<Socios>implements SociosDao {
+
+	public SociosDaoimpl() {
+		super("Socios");// e sla tabla
+		//la magia se genera en JdbcDaoBase
+		
+	}
 	
 	
 
 		//create
-		public Socios save(Socios socio) {
+	/*	public Socios save(Socios socio) {
 			
 			//mas adelante veremos como conectarnos a la db 
 			//insertar datos
@@ -45,7 +51,7 @@ public class SociosDaoimpl  implements SociosDao {
 			String sql = "select nombre, apellido from socios ";
 			System.out.println("Ejecutando sql:" + sql);
 			return new Socios(1l, "carlos", "lopez", "krloss@gmail.com", "av siempre viva 46", 1l);
-		}*/
+		}
 
 		public void delete(Long id) {
 			String sql = "DELETE FROM socios WHERE id = " + id;
@@ -56,8 +62,7 @@ public class SociosDaoimpl  implements SociosDao {
 			String sql = "UPDATE socios"+
 			" SET direccion = '"+entity.getDireccion()+"', APELLIDO = '"+entity.getApellido()+"', paises_id = "+entity.getPais_id()+""+
 			" WHERE id = 1";
-			System.out.println(sql);		
-		}
+			System.out.println(sql);	*/
 	}
 	
 	

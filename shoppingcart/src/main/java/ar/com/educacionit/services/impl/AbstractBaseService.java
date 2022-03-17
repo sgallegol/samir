@@ -7,10 +7,10 @@ import ar.com.educacionit.services.GenericService;
 
 public class AbstractBaseService<T> implements GenericService<T> {
 	
-	
+	//se crea un atributo de tipo interfaz
 
 		protected GaenericDao<T> genericDao;
-
+//se crea un metodo con una variable de tipo  interfaz GaenericDao
 		public AbstractBaseService(GaenericDao<T> daoDelHijo) {
 			this.genericDao = daoDelHijo;
 		}

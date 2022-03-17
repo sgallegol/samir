@@ -8,5 +8,6 @@
   <name>primer  artefacto creado con maveneclipsegithub</name>
   <modules>
   	<module>pruebas</module>
+  	<module>shoppingcart</module>
   </modules>
 </project>
